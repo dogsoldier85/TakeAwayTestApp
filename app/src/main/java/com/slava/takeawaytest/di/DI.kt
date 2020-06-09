@@ -15,6 +15,7 @@ import org.koin.dsl.module
 
 val AppModule = module {
     single<INetworkHandler> { NetworkHandler() }
+    // To use MockNetworkHandler just uncomment it and comment NetworkHandler line (above) and re-install app again
     //single<INetworkHandler> { MockNetworkHandler() }
     single { RestaurantsDatabase.getInstance(appContext).restaurantsDao() }
     single<IRestaurantsRepository> { RestaurantsRepository(get(), get()) }

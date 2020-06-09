@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.slava.takeawaytest.restaurants.entities.RestaurantsDataModel
 import com.slava.takeawaytest.R
 
-class RestaurantsAdapter() : RecyclerView.Adapter<RestaurantsViewHolder>() {
+class RestaurantsAdapter : RecyclerView.Adapter<RestaurantsViewHolder>() {
 
     private val data = ArrayList<RestaurantsDataModel>()
 
@@ -31,9 +31,5 @@ class RestaurantsAdapter() : RecyclerView.Adapter<RestaurantsViewHolder>() {
         data.clear()
         data.addAll(newData)
         diffResult.dispatchUpdatesTo(this)
-    }
-
-    interface OnItemClickListener {
-        fun onItemClicked(data: RestaurantsDataModel)
     }
 }
