@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TakeAway Candidate Assignment</string>
+    <string name="general_error">Something went wrong...</string>
+    <string name="no_data_founded">No data Founded</string>
+    <string name="no_data_to_show">No Data to show</string>
+    <string name="minimum_order_title">Minimum order: </string>
+    <string name="restaurants_current_status_title">Current: </string>
+    <string name="restaurants_current_status_opened">Opened </string>
+    <string name="restaurants_current_status_closed">Closed </string>
+</resources>
